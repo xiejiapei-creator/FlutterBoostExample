@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nkD-5v-DC0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BoostTestIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYh-US-Xyt">
+                                <rect key="frame" x="20" y="306" width="353" height="240"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="c0A-vi-vpU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="cg1-cP-lmM"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="jnJ-nV-6W7"/>
+                                </constraints>
+                                <string key="text">怒发冲冠，凭栏处、潇潇雨歇。抬望眼、仰天长啸，壮怀激烈。三十功名尘与土，八千里路云和月。莫等闲、白了少年头，空悲切。
+靖康耻，犹未雪。臣子恨，何时灭。驾长车，踏破贺兰山缺。壮志饥餐胡虏肉，笑谈渴饮匈奴血。待从头、收拾旧山河，朝天阙。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原生页面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOI-Nc-u1z">
+                                <rect key="frame" x="40" y="176" width="313" height="50"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mup-H0-3i4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EE8-yV-VdF">
+                                <rect key="frame" x="40" y="626" width="313" height="40"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="跳转到 Flutter"/>
+                                <connections>
+                                    <action selector="gotoFlutterPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0hq-2p-V5t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WYh-US-Xyt" secondAttribute="trailing" constant="20" id="86a-z7-ZZr"/>
+                            <constraint firstItem="EE8-yV-VdF" firstAttribute="top" secondItem="WYh-US-Xyt" secondAttribute="bottom" constant="80" id="JjO-nD-XPH"/>
+                            <constraint firstItem="YOI-Nc-u1z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="N0e-Rp-h99"/>
+                            <constraint firstItem="EE8-yV-VdF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="OgW-IV-ZLb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YOI-Nc-u1z" secondAttribute="trailing" constant="40" id="Wkm-x7-yl4"/>
+                            <constraint firstItem="WYh-US-Xyt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z7t-Bn-1lS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EE8-yV-VdF" secondAttribute="trailing" constant="40" id="axv-T3-0XE"/>
+                            <constraint firstItem="WYh-US-Xyt" firstAttribute="top" secondItem="YOI-Nc-u1z" secondAttribute="bottom" constant="80" id="oNT-tO-w2r"/>
+                            <constraint firstItem="WYh-US-Xyt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ppu-1f-Ufo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="ish-aK-6wd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="-335"/>
+        </scene>
+        <!--文章-->
+        <scene sceneID="Y3j-dw-lTE">
+            <objects>
+                <viewController id="VvS-bS-AtZ" customClass="ArticleViewController" customModule="BoostTestIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n5J-kR-aHO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqE-5M-Aup">
+                                <rect key="frame" x="24" y="184" width="313" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="跳转到 Flutter"/>
+                                <connections>
+                                    <action selector="jump:" destination="VvS-bS-AtZ" eventType="touchUpInside" id="PsW-5j-X71"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SZJ-sy-2Fb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="文章" id="NqA-Fv-0qi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8OX-PE-FM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437" y="413"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="CLW-3J-vxE">
+            <objects>
+                <tabBarController id="nkD-5v-DC0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4ha-un-62c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nz3-j5-GRn" kind="relationship" relationship="viewControllers" id="YA2-ku-qBI"/>
+                        <segue destination="MxA-rx-9rd" kind="relationship" relationship="viewControllers" id="0DA-7I-upW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1P-C0-c0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1574" y="-31"/>
+        </scene>
+        <!--商品列表-->
+        <scene sceneID="h05-Vr-Ph6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nz3-j5-GRn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="商品列表" id="xOS-RF-1OY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="14e-HQ-xLV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="37s-zu-m0O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLJ-0Q-xe9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-669.46564885496184" y="-335.21126760563379"/>
+        </scene>
+        <!--文章-->
+        <scene sceneID="7W4-Rs-r15">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MxA-rx-9rd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="文章" id="rsg-hs-G3Y"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tSw-Qh-mwx">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VvS-bS-AtZ" kind="relationship" relationship="rootViewController" id="mSI-GK-fVL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wea-Pf-5vi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-669" y="414"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

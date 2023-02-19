@@ -1,0 +1,36 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_boost (0.0.2):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - flutter_boost
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - Flutter (from `../flutter_module/.ios/Flutter`)
+  - flutter_boost (from `../flutter_module/.ios/.symlinks/plugins/flutter_boost/ios`)
+  - FlutterPluginRegistrant (from `../flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - Masonry
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../flutter_module/.ios/Flutter"
+  flutter_boost:
+    :path: "../flutter_module/.ios/.symlinks/plugins/flutter_boost/ios"
+  FlutterPluginRegistrant:
+    :path: "../flutter_module/.ios/Flutter/FlutterPluginRegistrant"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_boost: 6a73c54e5654df180c2cc379045b8cba9746fc8a
+  FlutterPluginRegistrant: debce1dfb1a9620fc2fdb913fc993afab2c8ba8a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: a3f40ef2de060549e7aa8718c0f2b68ac165e05d
+
+COCOAPODS: 1.11.3
